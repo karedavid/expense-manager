@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/title_dashboard"
+            app:menu="@menu/dashboard_menu_top"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <GridLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/MonthlyLimitLayout"
+                android:layout_column="0"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorPrimary"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_vertical">
+
+                <ImageView
+                    android:id="@+id/ModuleMonthlyLimitIcon"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:background="@drawable/ic_calendar_month_24"
+                    android:backgroundTint="?colorOnPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ModuleMonthlyLimitTitle"
+                    style="@style/StatModuleThemeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_monthly_limit"
+                    app:layout_constraintStart_toEndOf="@+id/ModuleMonthlyLimitIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ModuleMonthlyLimitContent1Title"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_current_limit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleMonthlyLimitTitle" />
+
+                <TextView
+                    android:id="@+id/ModuleMonthlyLimitContent1Value"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="60000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleMonthlyLimitTitle"
+                    />
+
+                <TextView
+                    android:id="@+id/ModuleMonthlyLimitContent2Title"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="@string/title_already_spent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleMonthlyLimitContent1Title"
+                    />
+
+                <TextView
+                    android:id="@+id/ModuleMonthlyLimitContent2Value"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="5000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleMonthlyLimitContent1Value"
+                    />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/ModuleMonthlyLimitProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    app:indicatorColor="?colorOnPrimary"
+                    app:showAnimationBehavior="outward"
+                    app:trackColor="?colorPrimaryInverse"
+                    app:trackCornerRadius="10dp"
+                    app:trackThickness="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleMonthlyLimitContent2Title"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/QuickStatsLayout"
+                android:layout_column="1"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorPrimary"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/ModuleQuickStatsIcon"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:background="@drawable/ic_calculate_24"
+                    android:backgroundTint="?colorOnPrimary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ModuleQuickStatsTitle"
+                    style="@style/StatModuleThemeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_quick_stats"
+                    app:layout_constraintStart_toEndOf="@+id/ModuleQuickStatsIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/twThisDaySumTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_this_day"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleQuickStatsTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisDaySumValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="5000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ModuleQuickStatsTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisWeekSumTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_this_week"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisDaySumTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisWeekSumValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="10000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisDaySumValue"/>
+
+                <TextView
+                    android:id="@+id/twThisMonthSumTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_this_month"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisWeekSumTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisMonthSumValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="6500 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisWeekSumValue"/>
+
+                <TextView
+                    android:id="@+id/twThisCycleSumTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_this_cycle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisMonthSumTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisCycleSumValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisMonthSumValue"/>
+
+                <TextView
+                    android:id="@+id/twThisYearSumTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_this_year"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisCycleSumTitle"/>
+
+                <TextView
+                    android:id="@+id/twThisYearSumValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisCycleSumValue"/>
+
+                <TextView
+                    android:id="@+id/twDailyAverageTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_daily_average"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisYearSumTitle"/>
+
+                <TextView
+                    android:id="@+id/twDailyAverageValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twThisYearSumValue"/>
+
+                <TextView
+                    android:id="@+id/twWeeklyAverageTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_weekly_average"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twDailyAverageTitle"/>
+
+                <TextView
+                    android:id="@+id/twWeeklyAverageValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twDailyAverageValue"/>
+
+                <TextView
+                    android:id="@+id/twMonthlyAverageTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_monthly_average"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twWeeklyAverageTitle"/>
+
+                <TextView
+                    android:id="@+id/twMonthlyAverageValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twWeeklyAverageValue"/>
+
+                <TextView
+                    android:id="@+id/twAnnualAverageTitle"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_annual_average"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twMonthlyAverageTitle"/>
+
+                <TextView
+                    android:id="@+id/twAnnualAverageValue"
+                    style="@style/StatModuleThemeContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8000 Ft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/twMonthlyAverageValue"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_marginBottom="240dp"
+
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="?colorPrimary"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/ModuleCategoryChartIcon"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/ic_bar_chart_24"
+                        android:backgroundTint="?colorOnPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/ModuleCategoryChartTitle"
+                        style="@style/StatModuleThemeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_charts"
+                        app:layout_constraintStart_toEndOf="@id/ModuleCategoryChartIcon"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/btnPagerNext"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_arrow_right_24"
+                        android:background="@android:color/transparent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:tint="?attr/colorOnPrimary"
+                        android:contentDescription="@string/cd_next_chart" />
+
+                    <ImageButton
+                        android:id="@+id/btnPagerPrevious"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_arrow_left_24"
+                        android:background="@android:color/transparent"
+                        android:tint="?attr/colorOnPrimary"
+                        app:layout_constraintEnd_toStartOf="@+id/btnPagerNext"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/cd_previous_chart" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/chartPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp">
+
+                    <LinearLayout
+                        android:id="@+id/chartCategoryContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/StatModuleThemeContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_category_sum_chart"/>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:checkedChip="@id/chipThisMonth"
+                            app:selectionRequired="true"
+                            app:singleSelection="true">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipThisMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:chipStrokeWidth="0dp"
+                                android:checkable="true"
+                                android:text="@string/chip_this_month" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipPreviousMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:chipStrokeWidth="0dp"
+                                android:checkable="true"
+                                android:text="@string/chip_prev_month" />
+
+                        </com.google.android.material.chip.ChipGroup>
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/chartCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="630dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chartMonthContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/StatModuleThemeContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_month_sum_chart"/>
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chartMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chartDayContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            style="@style/StatModuleThemeContent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_day_sum_chart"/>
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chartDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp" />
+
+                    </LinearLayout>
+
+                </androidx.viewpager.widget.ViewPager>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Spending Manager</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_list">List</string>
+    <string name="title_archive">Archive</string>
+    <string name="title_settings">Settings</string>
+    <string name="add">Add new item</string>
+    <string name="archive">Archive all</string>
+    <string name="title_add">Add</string>
+    <string name="title_add_long">Add new item</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_group_notifications">Notifications</string>
+    <string name="pref_title_daysbefore">Days before deadline</string>
+    <string name="pref_title_notenabled">Enable notifications</string>
+    <string name="title_default_home_screen">Default home screen</string>
+    <string name="title_save_new">Done</string>
+    <string name="date_of_payment">Date of payment</string>
+    <string name="date_of_deadline">Date of deadline</string>
+    <string name="new_hint_name">Name</string>
+    <string name="new_cat_food">Food</string>
+    <string name="new_cat_living">Living</string>
+    <string name="new_cat_household">Household</string>
+    <string name="new_cat_occasional">Occasional</string>
+    <string name="new_hint_seccat">Secondary category</string>
+    <string name="new_hint_amount">Amount</string>
+    <string name="new_cb_paid">Paid</string>
+    <string name="new_hint_desc">(Optional) Description</string>
+    <string name="new_hint_place">(Optional) Place</string>
+    <string name="new_cat_other">Other</string>
+    <string name="valute">USD</string>
+    <string name="et_gps_error">GPS Service is unavailable</string>
+    <string name="et_required_error">Required</string>
+    <string name="pref_title_monthly_limit">Monthly limit</string>
+    <string name="confirm_archive_all">Are you sure you want to archive all?</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_no">Cancel</string>
+
+    <string name="date_format">%1$d.%2$02d.%3$02d</string>
+    <string name="price_format">%1$d Ft</string>
+    <string name="tw_planned">(planned)</string>
+    <string name="title_dynamic_theme">Dynamic color (Android 12+)</string>
+    <string name="category_title">Category</string>
+    <string name="month_january">January</string>
+    <string name="month_february">February</string>
+    <string name="month_march">March</string>
+    <string name="month_april">April</string>
+    <string name="month_may">May</string>
+    <string name="month_juny">Juny</string>
+    <string name="month_july">July</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">October</string>
+    <string name="month_november">November</string>
+    <string name="month_december">December</string>
+
+    <!-- CHARTS -->
+    <string name="pie_label">%1$s: %2$s</string>
+    <string name="title_month_sum_chart">Summary by month</string>
+    <string name="title_category_sum_chart">Summary by category</string>
+    <string name="pie_center">Total:\n%1$s</string>
+    <string name="title_day_sum_chart">Summary of this Week</string>
+
+    <!-- NOTIFICATIONS -->
+    <string name="alert_title">Monthly limit reached</string>
+    <string name="alert_message">Monthly limit exceeded by %1$d Ft</string>
+    <string name="alert_channel_name">Monthly limit alerts</string>
+    <string name="title_monthly_limit">Monthly limit</string>
+    <string name="title_current_limit">Current limit:</string>
+    <string name="title_already_spent">Already spent:</string>
+    <string name="title_quick_stats">Quick stats</string>
+    <string name="title_this_week">This week:</string>
+    <string name="title_this_day">This day:</string>
+    <string name="title_this_month">This month:</string>
+    <string name="title_this_cycle">This cycle:</string>
+    <string name="title_this_year">This year:</string>
+    <string name="title_daily_average">Daily average:</string>
+    <string name="title_weekly_average">Weekly average:</string>
+    <string name="title_monthly_average">Monthly average:</string>
+    <string name="title_annual_average">Annual average:</string>
+    <string name="title_charts">Charts</string>
+    <string name="cd_next_chart">Next chart</string>
+    <string name="cd_previous_chart">Previous chart</string>
+    <string name="title_edit">Edit item</string>
+    <string name="new_cat_transportation">Transportation</string>
+    <string name="chip_this_month">This month</string>
+    <string name="chip_prev_month">Last month</string>
+    <string name="chip_all_time">All time</string>
+    <string name="no_data_pie_center">There is no data</string>
+
+</resources>

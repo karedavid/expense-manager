@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/ic_add_24.xml" value="0.1675" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/ic_food_24.xml" value="0.34" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.34" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/ic_shortcut_add_24.xml" value="0.1675" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/drawable/rounded_rectangle.xml" value="0.1495" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout-w500dp/fragment_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout-w600dp/fragment_archive.xml" value="0.24322916666666666" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout-w600dp/fragment_dashboard.xml" value="0.24322916666666666" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout-w600dp/fragment_list.xml" value="0.24322916666666666" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/activity_new.xml" value="0.28396739130434784" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/dialog_archive_all.xml" value="0.28396739130434784" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/fragment_archive.xml" value="0.10144927536231885" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/fragment_list.xml" value="0.346875" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/fragment_notifications.xml" value="0.28396739130434784" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/item_archive.xml" value="0.33" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/item_list.xml" value="0.291213768115942" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/item_notification.xml" value="0.2875905797101449" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/preference_edit_text.xml" value="0.2765625" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/layout/settings_activity.xml" value="0.29257246376811596" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/menu/dashboard_menu_top.xml" value="0.2453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/menu/list_menu_top.xml" value="0.2453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/menu/new_menu_top.xml" value="0.2453125" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2864583333333333" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.290625" />
+        <entry key="..\:/Users/kared/AndroidStudioProjects/Kolteskoveto/app/src/main/res/xml/root_preferences.xml" value="0.3463541666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

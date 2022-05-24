@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="add"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/title_add"
+        android:shortcutLongLabel="@string/title_add_long"
+        android:shortcutDisabledMessage="@string/title_add_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.kdapps.kolteskoveto"
+            android:targetClass="com.kdapps.kolteskoveto.NewActivity" />
+    </shortcut>
+</shortcuts>
